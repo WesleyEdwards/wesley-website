@@ -1,0 +1,19 @@
+:root {
+    --background: #9AB19A;
+    --primary: #9AB19A;
+    --primary-dark: #52584D;
+    --primary-light: #D9C1BB;
+    --secondary: #D9C1BB;
+    --error-color: #E0115F;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    background: var(--background);
+  }
+  

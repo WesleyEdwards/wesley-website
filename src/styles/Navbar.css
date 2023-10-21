@@ -1,0 +1,98 @@
+.links {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  padding-block: 24px;
+  gap: 20px;
+}
+
+.link {
+  text-decoration: none;
+  border-radius: 5px;
+  color: var(--primary-light);
+  transition-duration: 0.2s;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  padding: 4px 8px;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 8px;
+  margin: 8px 16px;
+}
+
+.link:hover {
+  background-color: var(--primary-light);
+  opacity: 0.5;
+  color: black;
+  cursor: pointer;
+}
+
+.link div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: 600;
+  color: inherit;
+}
+
+.active {
+  background-color: var(--primary-light);
+  opacity: 0.5;
+  color: black;
+}
+
+.navbar {
+  width: 100%;
+  background: var(--primary-dark);
+}
+
+.toggleButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.toggleButton svg {
+  font-size: 50px;
+}
+.toggleButton button {
+  background-color: transparent;
+  border: none;
+  color: var(--primary-light);
+  cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-dark);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.close-sidenav {
+  width: 100%;
+  display: flex;
+  color: white;
+  justify-content: flex-end;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.close-sidenav svg {
+  font-size: 50px;
+}
