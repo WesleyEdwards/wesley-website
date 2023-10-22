@@ -8,14 +8,14 @@ import Layout from "./Layout";
 
 const authRouter = createBrowserRouter([
   {
-    path: "",
+    path: "/*",
     element: <Layout />,
     children: [
       ...Object.entries(pages).map(([path, element]) => ({
         path,
         element,
       })),
-      { path: "*", element: <Navigate to="dashboard" replace /> },
+      { path: "*", element: <Navigate to="/home" replace /> },
     ],
   },
 ]);

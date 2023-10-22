@@ -1,0 +1,26 @@
+div.projects-page img {
+  background-color: grey;
+  border-radius: 10px;
+}
+div.projects-page img:hover {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-block: 1rem;
+}
+
+div.project-container .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+    color: #333;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    margin-inline: 0;
+}
