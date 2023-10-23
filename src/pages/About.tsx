@@ -16,10 +16,7 @@ export const About = () => {
         </div>
       </div>
       <div className={`${smallScreenStyle("col-flex", "row-flex")} full-width`}>
-        <img
-          src="../public/in-mexico.jpg"
-          className={smallScreenStyle("full-width", "half-width")}
-        />
+        <img src="../public/in-mexico.jpg" className="half-width" />
         <p className={smallScreenStyle("", "horizontal-text")}>
           Wesley and his wife Sarah live in Logan, Utah. They love back-packing,
           running, attending Utah State sports events, and being with family.
@@ -35,22 +32,12 @@ export const About = () => {
       </div>
 
       <div>
-        <div className={smallScreenStyle("pictures-small", "pictures")}>
-          <div
-            className="col-flex"
-            style={
-              smallScreen
-                ? { width: "100%", gap: "10px" }
-                : { width: "50%", gap: "2rem" }
-            }
-          >
+        <div className="pictures">
+          <img src="../public/skiing.png" className="half-width" />
+          <div className={"col-flex pictures-col"}>
             <img src="../public/marathon.jpg" className="full-width" />
             <img src="../public/hockey.jpg" className="full-width" />
           </div>
-          <img
-            src="../public/skiing.png"
-            className={smallScreenStyle("full-width", "half-width")}
-          />
         </div>
         <p>
           Wesley loves running with his dad and brothers, playing hockey with
@@ -74,10 +61,7 @@ export const About = () => {
           .
         </p>
 
-        <img
-          src="../public/mate.jpg"
-          className={smallScreenStyle("full-width", "half-width")}
-        />
+        <img src="../public/mate.jpg" className="half-width" />
       </div>
     </div>
   );

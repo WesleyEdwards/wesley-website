@@ -7,20 +7,33 @@ div.projects-page img:hover {
 }
 
 .project-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    margin-block: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 1rem;
 }
 
 div.project-container .title {
-    font-size: 1.5rem;
-    font-weight: 500;
-    font-style: italic;
-    color: #333;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 0;
-    margin-inline: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #333;
+}
+
+div.project-container .description {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #333;
+  text-align: end;
+  margin-top: 0;
+}
+
+.project-container svg {
+  font-size: 3rem;
+}
+.project-container svg:hover {
+  color: #333;
+  cursor: pointer;
 }
