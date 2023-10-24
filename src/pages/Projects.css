@@ -1,14 +1,21 @@
 .project-image {
-  background-color: grey;
+  /* background-color: var(--primary-dark); */
   height: 10rem;
   border-radius: 10px;
 }
-.project-image:hover {
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+
+.clickable:hover {
+  cursor: pointer;
+  background-color: rgba(149, 149, 149, 0.5);
+
+  transition: background-color 0.5s ease;
+}
+.no-click {
+  margin: 10px;
 }
 
 .tech-image {
-  max-height: 4rem;
+  max-height: 3rem;
   max-width: 8rem;
   border-radius: 3px;
   margin-inline: 0.5rem;
@@ -49,4 +56,8 @@ div.project-container .description {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.tech-images:hover {
+  cursor: pointer;
 }

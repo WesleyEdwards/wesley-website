@@ -6,17 +6,69 @@ type Tech =
   | "firebase"
   | "typeScript"
   | "mui"
-  | "jetpack"
+  | "jetpack-compose"
   | "mongo"
-  | "express";
+  | "express"
+  | "python"
+  | "kotlin"
+  | "flask";
 
 type ProjectInfo = {
   name: string;
   description: string;
   image: string;
-  link: string;
+  link?: string;
   githubLink: string;
   technologies: Tech[];
+};
+
+const techImages: Record<
+  Tech,
+  {
+    logo: string;
+    url: string;
+  }
+> = {
+  react: {
+    logo: "../public/react-logo.png",
+    url: "https://react.dev",
+  },
+  firebase: {
+    logo: "../public/firebase-logo.png",
+    url: "https://firebase.google.com/",
+  },
+  typeScript: {
+    logo: "../public/ts-logo.png",
+    url: "https://www.typescriptlang.org/",
+  },
+  mui: {
+    logo: "../public/mui-logo.png",
+    url: "https://mui.com/",
+  },
+  "jetpack-compose": {
+    logo: "../public/jetpack-logo.png",
+    url: "https://developer.android.com/jetpack",
+  },
+  mongo: {
+    logo: "../public/mongo-logo.png",
+    url: "https://www.mongodb.com/",
+  },
+  express: {
+    logo: "../public/express-logo.png",
+    url: "https://expressjs.com/",
+  },
+  python: {
+    logo: "../public/python-logo.png",
+    url: "https://www.python.org/",
+  },
+  kotlin: {
+    logo: "../public/kotlin-logo.png",
+    url: "https://kotlinlang.org/",
+  },
+  flask: {
+    logo: "../public/flask-logo.png",
+    url: "https://flask.palletsprojects.com/en/2.0.x/",
+  },
 };
 
 const projects: ProjectInfo[] = [
@@ -37,28 +89,44 @@ const projects: ProjectInfo[] = [
     githubLink: "https://github.com/WesleyEdwards/reptile-tracker",
     technologies: ["react", "typeScript", "mongo", "express", "mui"],
   },
+  {
+    name: "Lost and Found",
+    description: "Lost and Found for the community",
+    image: "../public/lost-logo.png",
+    githubLink: "https://github.com/WesleyEdwards/LostAndFound",
+    technologies: ["jetpack-compose", "kotlin", "firebase"],
+  },
+  {
+    name: "Dan's Frappuccino Hell",
+    description: "Manage store funds, keep track of employees, or buy a coffee",
+    image: "../public/dan-logo.png",
+    githubLink: "https://github.com/WesleyEdwards/Dan-s-Frappe-Hell",
+    technologies: ["flask", "python", "react", "typeScript", "mui"],
+  },
+  {
+    name: "Tohdoh",
+    description: "Scheduling tool for college students",
+    image: "../public/grandma-logo.png",
+    githubLink: "https://github.com/WesleyEdwards/tohdoh",
+    technologies: ["flask", "python", "react", "typeScript"],
+  },
 ];
-
-const techImages: Record<Tech, string> = {
-  react: "../public/react-logo.png",
-  firebase: "../public/firebase-logo.png",
-  typeScript: "../public/ts-logo.png",
-  mui: "../public/mui-logo.png",
-  jetpack: "../public/jetpack-logo.png",
-  mongo: "../public/mongo-logo.png",
-  express: "../public/express-logo.png",
-};
 
 export const Projects = () => {
   return (
     <div className="container">
       <h1 className="header">Projects</h1>
-      {projects.map((project) => (
+      {projects.map((project, i) => (
         <div key={project.name}>
           <div className="project-container">
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <img src={project.image} className="project-image" />
-            </a>
+            {project.link ? (
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <img src={project.image} className="project-image clickable" />
+              </a>
+            ) : (
+              <img src={project.image} className="project-image no-click" />
+            )}
+
             <div>
               <div
                 style={{
@@ -79,16 +147,32 @@ export const Projects = () => {
           </div>
           <div className="tech-images">
             {project.technologies.map((tech) => (
-              <img key={tech} className="tech-image" src={techImages[tech]} />
+              <a
+                href={techImages[tech].url}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={tech
+                  .split("-")
+                  .map((w) => `${w[0].toUpperCase()}${w.slice(1)}`)
+                  .join(" ")}
+              >
+                <img
+                  key={tech}
+                  className="tech-image"
+                  src={techImages[tech].logo}
+                />
+              </a>
             ))}
           </div>
-          <div
-            style={{
-              borderBottom: "1px solid black",
-              width: "100%",
-              margin: "4rem 0",
-            }}
-          />
+          {i < projects.length - 1 && (
+            <div
+              style={{
+                borderBottom: "1px solid black",
+                width: "100%",
+                margin: "4rem 0",
+              }}
+            />
+          )}
         </div>
       ))}
     </div>
