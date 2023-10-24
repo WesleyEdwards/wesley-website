@@ -3,7 +3,7 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
-import { pages } from "./utils";
+import { pages } from "./utils/pages";
 import Layout from "./Layout";
 
 const authRouter = createBrowserRouter([

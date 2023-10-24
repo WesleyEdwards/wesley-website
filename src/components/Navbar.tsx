@@ -14,7 +14,7 @@ export const Navbar = () => {
 
   const tabs: { [key: string]: string } = {
     Home: "/home",
-    Projects: "/projects",
+    Portfolio: "/portfolio",
     About: "/about",
   };
 
