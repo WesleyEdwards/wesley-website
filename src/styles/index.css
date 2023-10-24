@@ -1,28 +1,37 @@
 :root {
-    --background: #9AB19A;
-    --primary: #9AB19A;
-    --primary-dark: #52584D;
-    --primary-light: #D9C1BB;
-    --secondary: #D9C1BB;
-    --error-color: #E0115F;
+  --background: #9ab19a;
+  --primary: #9ab19a;
+  --primary-dark: #52584d;
+  --primary-light: #d9c1bb;
+  --secondary: #d9c1bb;
+  --error-color: #e0115f;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background: var(--background);
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 10rem;
 }
 
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-    background: var(--background);
-  }
-  
-  .container {
-    max-width: 1000px;
-    padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16rem;
-    margin-block: 10rem;
-  }
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+  width: 100%;
+  font-weight: 50;
+}

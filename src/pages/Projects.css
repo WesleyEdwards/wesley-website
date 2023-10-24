@@ -1,17 +1,24 @@
-div.projects-page img {
+.project-image {
   background-color: grey;
+  height: 10rem;
   border-radius: 10px;
 }
-div.projects-page img:hover {
+.project-image:hover {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.tech-image {
+  max-height: 4rem;
+  max-width: 8rem;
+  border-radius: 3px;
+  margin-inline: 0.5rem;
 }
 
 .project-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-  margin-block: 1rem;
+  justify-content: space-between;
+  width: 32rem;
 }
 
 div.project-container .title {
@@ -36,4 +43,10 @@ div.project-container .description {
 .project-container svg:hover {
   color: #333;
   cursor: pointer;
+}
+
+.tech-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

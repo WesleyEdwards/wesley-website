@@ -1,9 +1,7 @@
 /* About.css */
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 2rem;
+.about-page {
+  gap: 16rem;
 }
 
 .about-page img {
