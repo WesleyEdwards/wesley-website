@@ -2,34 +2,32 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import "./Portfolio.css";
 import { projects, techImages } from "../utils/projectData";
 
-
 export const Portfolio = () => {
   return (
     <div className="container">
       <h1 className="header">Projects</h1>
       {projects.map((project, i) => (
         <div key={project.name}>
-          <div className="project-container">
+          <div key={project.name} className="project-container">
             {project.link ? (
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <img src={project.image} className="project-image clickable" />
+                <img
+                  src={project.image}
+                  id={project.name.toLowerCase()}
+                  className="project-image clickable"
+                />
               </a>
             ) : (
               <img src={project.image} className="project-image no-click" />
             )}
 
             <div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-end",
-                  alignItems: "center",
-                  flexDirection: "row",
-                  gap: "2rem",
-                }}
-              >
+              <div className="github-link">
                 <div className="title">{project.name}</div>
-                <div onClick={() => window.open(project.githubLink, "_blank")}>
+                <div
+                  title="Github Repo"
+                  onClick={() => window.open(project.githubLink, "_blank")}
+                >
                   <GitHubIcon />
                 </div>
               </div>
@@ -39,6 +37,7 @@ export const Portfolio = () => {
           <div className="tech-images">
             {project.technologies.map((tech) => (
               <a
+                key={tech}
                 href={techImages[tech].url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -55,15 +54,7 @@ export const Portfolio = () => {
               </a>
             ))}
           </div>
-          {i < projects.length - 1 && (
-            <div
-              style={{
-                borderBottom: "1px solid black",
-                width: "100%",
-                margin: "4rem 0",
-              }}
-            />
-          )}
+          {i < projects.length - 1 && <div className="divider" />}
         </div>
       ))}
     </div>

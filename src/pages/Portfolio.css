@@ -4,6 +4,11 @@
   border-radius: 10px;
 }
 
+#galaga {
+  image-rendering: pixelated;
+  padding: 5px;
+}
+
 .clickable:hover {
   cursor: pointer;
   background-color: rgba(149, 149, 149, 0.5);
@@ -60,4 +65,18 @@ div.project-container .description {
 
 .tech-images:hover {
   cursor: pointer;
+}
+
+.divider {
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin: 4rem 0;
+}
+
+.github-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
 }

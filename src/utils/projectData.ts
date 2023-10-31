@@ -108,4 +108,20 @@ export const projects: ProjectInfo[] = [
     githubLink: "https://github.com/WesleyEdwards/tohdoh",
     technologies: ["flask", "python", "react", "typeScript"],
   },
+  {
+    name: "Drawing App",
+    description: "Create your own masterpiece",
+    image: "../public/drawing-logo.png",
+    githubLink: "https://github.com/WesleyEdwards/Drawing-App",
+    technologies: ["jetpack-compose", "kotlin"],
+  },
+  {
+    name: "Galaga",
+    description: "Replica of Galaga",
+    image: "../public/galaga-logo.png",
+    githubLink: "https://github.com/WesleyEdwards/galaga",
+    technologies: ["typeScript"],
+    link: "https://wesleyedwards.github.io/galaga/"
+  },
+
 ];

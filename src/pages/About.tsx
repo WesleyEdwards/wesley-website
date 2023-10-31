@@ -54,8 +54,8 @@ export const About = () => {
         <p className={smallScreenStyle("", "horizontal-text")}>
           Yerba Mate is a traditional South American drink that has inspired
           several school and personal projects for Wesley, such as{" "}
-          <a href="https://github.com/WesleyEdwards/GoMatero">Go Matero</a> and{" "}
-          <a href="https://github.com/WesleyEdwards/mate-champion">
+          <a target="_blank" href="https://github.com/WesleyEdwards/GoMatero">Go Matero</a> and{" "}
+          <a target="_blank" href="https://github.com/WesleyEdwards/mate-champion">
             Mate Champion
           </a>
           .
