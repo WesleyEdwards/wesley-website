@@ -18,7 +18,9 @@ export const Portfolio = () => {
                 />
               </a>
             ) : (
-              <img src={project.image} className="project-image no-click" />
+              <div>
+                <img src={project.image} className="project-image no-click" />
+              </div>
             )}
 
             <div>

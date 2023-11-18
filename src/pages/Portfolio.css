@@ -1,5 +1,4 @@
 .project-image {
-  /* background-color: var(--primary-dark); */
   height: 10rem;
   border-radius: 10px;
 }
@@ -46,7 +45,7 @@ div.project-container .description {
   font-style: italic;
   color: #333;
   text-align: end;
-  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 .project-container svg {
@@ -61,6 +60,7 @@ div.project-container .description {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .tech-images:hover {
@@ -79,4 +79,18 @@ div.project-container .description {
   align-items: center;
   flex-direction: row;
   gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .project-container {
+    width: 16rem;
+    flex-direction: column;
+  }
+  .tech-image {
+    max-height: 2rem;
+    max-width: 6rem;
+  }
+  .project-image {
+    height: 6rem;
+  }
 }

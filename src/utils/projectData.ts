@@ -14,6 +14,7 @@ import danLogo from "../assets/dan-logo.png";
 import drawingLogo from "../assets/drawing-logo.png";
 import grandmaLogo from "../assets/grandma-logo.png";
 import galagaLogo from "../assets/galaga-logo.png";
+import pyTutorLogo from "../assets/py-tutor-icon.png";
 
 export type Tech =
   | "react"
@@ -86,6 +87,14 @@ export const techImages: Record<
 };
 
 export const projects: ProjectInfo[] = [
+  {
+    name: "PyTutor",
+    description: "Learning tool for CS students",
+    image: pyTutorLogo,
+    link: "https://py-tutor.web.app/",
+    githubLink: "https://github.com/WesleyEdwards/pyTutor",
+    technologies: ["react", "typeScript", "express", "firebase"],
+  },
   {
     name: "Mate Champion",
     description: "A fun game to play with friends",

@@ -79,18 +79,12 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
-  .footer svg {
-    font-size: 50px;
-  }
-
-  .pictures-small {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
   .pictures-col {
     width: 100%;
-    gap: 10px;
+    gap: 2rem;
+  }
+  .pictures {
+    flex-direction: column;
   }
 
   .half-width {
