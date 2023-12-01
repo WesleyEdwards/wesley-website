@@ -34,7 +34,7 @@ export const About = () => {
         <img src={atHackathon} className="full-width" />
         <p>
           The computer science department at Utah State University sponsors many
-          events and clubs, including the annual hackathon the ACM club, both of
+          events and clubs, including the annual hackathon and the ACM club, both of
           which Wesley has been involved in.
         </p>
       </div>
