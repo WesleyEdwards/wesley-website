@@ -11,6 +11,11 @@ export const Portfolio = () => {
         {projects.map((project) => (
           <div key={project.name} className="project-container">
             <div className="title">{project.name}</div>
+            <div className="divider"></div>
+
+            <div className="description">{project.description}</div>
+
+            <div style={{ height: "100%" }}></div>
             <div className="line-items">
               {project.link && (
                 <div className="project-line-item">
@@ -62,10 +67,6 @@ export const Portfolio = () => {
                   ))}
                 </div>
               </div>
-            </div>
-
-            <div>
-              <div className="description">{project.description}</div>
             </div>
           </div>
         ))}
