@@ -61,6 +61,7 @@ p {
 
 #profile-pic {
   max-width: 32rem;
+  align-self: center;
 }
 
 .pictures {

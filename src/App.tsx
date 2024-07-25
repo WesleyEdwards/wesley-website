@@ -3,18 +3,20 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
-import { pages } from "./utils/pages";
 import Layout from "./Layout";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
 
 const authRouter = createBrowserRouter([
   {
     path: "/*",
     element: <Layout />,
     children: [
-      ...Object.entries(pages).map(([path, element]) => ({
-        path,
-        element,
-      })),
+      { path: "home", element: <Home /> },
+      { path: "portfolio", element: <Portfolio /> },
+      { path: "about", element: <About /> },
+
       { path: "*", element: <Navigate to="/home" replace /> },
     ],
   },

@@ -21,7 +21,7 @@ export type Tech =
   | "firebase"
   | "typeScript"
   | "mui"
-  | "jetpack-compose"
+  | "jetpack Compose"
   | "mongo"
   | "express"
   | "python"
@@ -50,39 +50,39 @@ export const techImages: Record<
   },
   firebase: {
     logo: firebaseLogo,
-    url: "https://firebase.google.com/",
+    url: "https://firebase.google.com",
   },
   typeScript: {
     logo: tsLogo,
-    url: "https://www.typescriptlang.org/",
+    url: "https://www.typescriptlang.org",
   },
   mui: {
     logo: muiLogo,
-    url: "https://mui.com/",
+    url: "https://mui.com",
   },
-  "jetpack-compose": {
+  "jetpack Compose": {
     logo: jetpackLogo,
     url: "https://developer.android.com/jetpack",
   },
   mongo: {
     logo: mongoLogo,
-    url: "https://www.mongodb.com/",
+    url: "https://www.mongodb.com",
   },
   express: {
     logo: expressLogo,
-    url: "https://expressjs.com/",
+    url: "https://expressjs.com",
   },
   python: {
     logo: pythonLogo,
-    url: "https://www.python.org/",
+    url: "https://www.python.org",
   },
   kotlin: {
     logo: kotlinLogo,
-    url: "https://kotlinlang.org/",
+    url: "https://kotlinlang.org",
   },
   flask: {
     logo: flaskLogo,
-    url: "https://flask.palletsprojects.com/en/2.0.x/",
+    url: "https://flask.palletsprojects.com/en/2.0.x",
   },
 };
 
@@ -91,7 +91,7 @@ export const projects: ProjectInfo[] = [
     name: "PyTutor",
     description: "Learning tool for CS students",
     image: pyTutorLogo,
-    link: "https://py-tutor.web.app/",
+    link: "https://py-tutor.web.app",
     githubLink: "https://github.com/WesleyEdwards/pyTutor",
     technologies: ["react", "typeScript", "express", "firebase"],
   },
@@ -100,7 +100,7 @@ export const projects: ProjectInfo[] = [
     description: "A fun game to play with friends",
     image:
       "https://user-images.githubusercontent.com/97990557/210005678-afa98993-b045-4134-9c4e-34cb390b3813.png",
-    link: "https://mate-champion.web.app/",
+    link: "https://wesleyedwards.github.io/mate-champion",
     githubLink: "https://github.com/WesleyEdwards/mate-champion",
     technologies: ["react", "typeScript", "firebase"],
   },
@@ -117,7 +117,7 @@ export const projects: ProjectInfo[] = [
     description: "Lost and Found for the community",
     image: lostLogo,
     githubLink: "https://github.com/WesleyEdwards/LostAndFound",
-    technologies: ["jetpack-compose", "kotlin", "firebase"],
+    technologies: ["jetpack Compose", "kotlin", "firebase"],
   },
   {
     name: "Dan's Frappuccino Hell",
@@ -138,7 +138,7 @@ export const projects: ProjectInfo[] = [
     description: "Create your own masterpiece",
     image: drawingLogo,
     githubLink: "https://github.com/WesleyEdwards/Drawing-App",
-    technologies: ["jetpack-compose", "kotlin"],
+    technologies: ["jetpack Compose", "kotlin"],
   },
   {
     name: "Galaga",
@@ -146,6 +146,6 @@ export const projects: ProjectInfo[] = [
     image: galagaLogo,
     githubLink: "https://github.com/WesleyEdwards/galaga",
     technologies: ["typeScript"],
-    link: "https://wesleyedwards.github.io/galaga/",
+    link: "https://wesleyedwards.github.io/galaga",
   },
 ];
